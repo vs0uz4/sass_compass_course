@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAK;EACH,IAAI,EAAE,0BAA0B;;AAGlC,CAAE;EACA,SAAS,EAAE,IAAI;;AAGjB,CAAE;EACA,KAAK,EAAE,OAAO;EACd,WAAW,EAAE,IAAI;;AAGnB,OAAQ;EACN,eAAe,EAAE,IAAI;;AAGvB,UAAW;EACT,KAAK,EAAE,KAAK",
+"sources": ["not_chain.scss"],
+"names": [],
+"file": "not_chain.css"
+}

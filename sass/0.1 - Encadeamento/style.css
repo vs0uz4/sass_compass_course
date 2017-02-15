@@ -1,0 +1,17 @@
+body {
+  font: Verdana, Arial, sans-serif; }
+
+p {
+  font-size: 18px; }
+
+a {
+  color: #ff122b;
+  font-weight: bold; }
+
+a:hover {
+  text-decoration: none; }
+
+#paragraph {
+  color: green; }
+
+/*# sourceMappingURL=style.css.map

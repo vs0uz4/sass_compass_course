@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAK;EACH,IAAI,EAAE,0BAA0B;;AAGlC,CAAE;EACA,SAAS,EAAE,IAAI;EAEf,GAAE;IACA,KAAK,EAAE,OAAO;IACd,WAAW,EAAE,IAAI;IAEjB,SAAQ;MACN,eAAe,EAAE,IAAI;;AAM3B,UAAW;EACT,KAAK,EAAE,KAAK",
+"sources": ["chained.scss"],
+"names": [],
+"file": "chained.css"
+}
