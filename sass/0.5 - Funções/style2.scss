@@ -1,0 +1,74 @@
+/* style.scss */
+
+@import "variables";
+@import "functions";
+
+/* alert box definitions */
+.alert {
+  $text-default: fixText($default_color) !default;
+  $background-default: $default_color !default;
+  $border-default: fixBorder($default_color) !default;
+
+  padding:15px;
+  margin-bottom:20px;
+  color: $text-default;
+  background-color: $background-default;
+  border:1px solid $border-default;
+  border-radius:4px;
+
+  em {
+    font-weight: bold;
+  }
+}
+
+/* alert box info definitions */
+.alert-info {
+  @extend .alert;
+
+  $text-info: fixText($info_color) !default;
+  $background-info: $info_color !default;
+  $border-info: fixBorder($info_color) !default;
+
+  color: $text-info;
+  background-color: $background-info;
+  border-color: $border-info;
+}
+
+/* alert box warning definitions */
+.alert-warning {
+  @extend .alert;
+
+  $text-warning: fixText($warning_color) !default;
+  $background-warning: $warning_color !default;
+  $border-warning: fixBorder($warning_color) !default;
+
+  color: $text-warning;
+  background-color: $background-warning;
+  border-color: $border-warning;
+}
+
+/* alert box danger definitions */
+.alert-danger {
+  @extend .alert;
+
+  $text-danger: fixText($danger_color) !default;
+  $background-danger: $danger_color !default;
+  $border-danger: fixBorder($danger_color) !default;
+
+  color: $text-danger;
+  background-color: $background-danger;
+  border-color: $border-danger;
+}
+
+/* alert box success definitions */
+.alert-success {
+  @extend .alert;
+
+  $text-success: fixText($success_color) !default;
+  $background-success: $success_color !default;
+  $border-success: fixBorder($success_color) !default;
+
+  color: $text-success;
+  background-color: $background-success;
+  border-color: $border-success;
+}

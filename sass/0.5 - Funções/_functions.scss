@@ -1,0 +1,9 @@
+/* _functions.scss */
+
+@function fixBorder ($color){
+  @return desaturate(darken($color, 10%), 10%);
+}
+
+@function fixText ($color){
+  @return darken($color, 55%);
+}
