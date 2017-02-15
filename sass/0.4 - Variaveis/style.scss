@@ -1,0 +1,53 @@
+/* style.scss */
+
+@import "variables";
+
+/* alert box definitions */
+.alert {
+  $foreground-default: #595959 !default;
+  $background-default: #f5f5f5 !default;
+  $border-default: #e3e3e3 !default;
+
+  padding:15px;
+  margin-bottom:20px;
+  color: $foreground-default;
+  background-color: $background-default;
+  border:1px solid $border-default;
+  border-radius:4px;
+
+  em {
+    font-weight: bold;
+  }
+}
+
+/* alert box info definitions */
+.alert-info {
+  @extend .alert;
+  color: $foreground-info;
+  background-color: $background-info;
+  border-color: $border-info;
+}
+
+/* alert box warning definitions */
+.alert-warning {
+  @extend .alert;
+  color: $foreground-warning;
+  background-color: $background-warning;
+  border-color: $border-warning;
+}
+
+/* alert box danger definitions */
+.alert-danger {
+  @extend .alert;
+  color: $foreground-danger;
+  background-color: $background-danger;
+  border-color: $border-danger;
+}
+
+/* alert box success definitions */
+.alert-success {
+  @extend .alert;
+  color: $foreground-success;
+  background-color: $background-success;
+  border-color: $border-success;
+}
