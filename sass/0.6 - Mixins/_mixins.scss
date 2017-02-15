@@ -1,0 +1,11 @@
+/* _mixins.scss */
+
+@import "functions";
+
+@mixin buildBox($color) {
+  @extend .alert;
+
+  color: fixText($color);
+  background-color: $color;
+  border-color: fixBorder($color);
+}

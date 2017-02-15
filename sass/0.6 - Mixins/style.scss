@@ -1,0 +1,42 @@
+/* style.scss */
+
+@import "variables";
+@import "mixins";
+
+/* alert box definitions */
+.alert {
+  $text-color: fixText($default_color) !default;
+  $background-color: $default_color !default;
+  $border-color: fixBorder($default_color) !default;
+
+  padding:15px;
+  margin-bottom:20px;
+  color: $text-color;
+  background-color: $background-color;
+  border:1px solid $border-color;
+  border-radius:4px;
+
+  em {
+    font-weight: bold;
+  }
+}
+
+/* alert box info definitions */
+.alert-info {
+  @include buildBox($info_color);
+}
+
+/* alert box warning definitions */
+.alert-warning {
+  @include buildBox($warning_color);
+}
+
+/* alert box danger definitions */
+.alert-danger {
+  @include buildBox($danger_color);
+}
+
+/* alert box success definitions */
+.alert-success {
+  @include buildBox($success_color);
+}
