@@ -1,0 +1,27 @@
+body {
+  font-size: 20px;
+}
+
+.box-azul {
+  padding: 20px;
+  margin: 20px auto;
+  border: 3px solid;
+  border-color: darkblue;
+  color: blue;
+
+  em {
+    font-weight: bold;
+  }
+}
+
+.box-vermelho {
+  @extend .box-azul;
+  color: red;
+  border-color: darkred;
+}
+
+.box-laranja {
+  @extend .box-azul;
+  color: orange;
+  border-color: darkorange;
+}

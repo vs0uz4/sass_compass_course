@@ -1,0 +1,21 @@
+body {
+  font-size: 20px; }
+
+.box {
+  padding: 20px;
+  margin: 20px auto;
+  border: 3px solid; }
+
+.azul {
+  color: blue;
+  border-color: darkblue; }
+
+.vermelho {
+  color: red;
+  border-color: darkred; }
+
+.laranja {
+  color: orange;
+  border-color: darkorange; }
+
+/*# sourceMappingURL=style.css.map */
