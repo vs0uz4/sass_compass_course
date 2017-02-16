@@ -1,0 +1,63 @@
+/*
+Error: File to import not found or unreadable: compass/reset.
+        on line 7 of screen.scss
+
+2: $default-text-shadow-color: rgba(#000, 0.6);
+3: $default-text-shadow-blur: 5px;
+4: $default-text-shadow-v-offset: 2px;
+5: 
+6: /* importing compass/reset and compass/css3 *\/
+7: @import "compass/reset";
+8: @import "compass/css3";
+9: 
+10: // Vanilla CSS as defining
+11: // typography, headers, basic HTML elements, lists, forms and margins etc
+12: /* Start Vanilla CSS 1.0.2 *\/
+
+Backtrace:
+screen.scss:7
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/tree/import_node.rb:45:in `import'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/tree/import_node.rb:28:in `imported_file'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/tree/import_node.rb:37:in `css_import?'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/plugin.rb:82:in `update_stylesheets'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.4.23/bin/scss:13:in `<top (required)>'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/bin/scss:23:in `load'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/bin/scss:23:in `<main>'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `eval'
+/home/vs0uz4/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: compass/reset.\A         on line 7 of screen.scss\A \A 2: $default-text-shadow-color: rgba(#000, 0.6);\A 3: $default-text-shadow-blur: 5px;\A 4: $default-text-shadow-v-offset: 2px;\A 5: \A 6: /* importing compass/reset and compass/css3 */\A 7: @import \"compass/reset\";\A 8: @import \"compass/css3\";\A 9: \A 10: // Vanilla CSS as defining\A 11: // typography, headers, basic HTML elements, lists, forms and margins etc\A 12: /* Start Vanilla CSS 1.0.2 */"; }
