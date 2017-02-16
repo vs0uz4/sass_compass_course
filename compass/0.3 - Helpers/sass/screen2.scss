@@ -1,0 +1,98 @@
+// default variables of shadows
+$default-text-shadow-color: rgba(#000, 0.6);
+$default-text-shadow-blur: 5px;
+$default-text-shadow-v-offset: 2px;
+
+$default-box-shadow-color: rgba(#000, 0.2);
+$default-box-shadow-blur: 5px;
+$default-box-shadow-v-offset: 5px;
+
+// importing basics compass utilities
+@import "compass";
+
+/* headers settings */
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h1 {
+  font-size: 3em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+
+}
+
+h2 {
+  font-size: 2em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+}
+
+h3 {
+  font-size: 1.5833333333333333em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+h4 {
+  font-size: 1.3333333333333333em;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+}
+
+h5 {
+  font-size: 1.1666666666666667em;
+  margin-top: 1.67em;
+  margin-bottom: 1.67em;
+}
+
+h6 {
+  font-size: 1.0833333333333333em;
+  margin-top: 2.33em;
+  margin-bottom: 2.33em;
+}
+
+/* class with compass mixin for shadows */
+.sombra {
+  @include single-text-shadow;
+}
+
+/* class with compass mixin for box-shadow */
+.box {
+  display: block;
+  float: left;
+  border: 2px solid #fff;
+  width: 200px;
+  height: 200px;
+  margin: 0px 10px auto;
+
+  &:hover {
+    border: 2px solid;
+    @include single-box-shadow;
+  }
+}
+
+/* class with compass mixin for transition and helper for image path */
+.box-vintage {
+  @extend .box;
+
+  background-image: image-url('background/vintage.jpg');
+  @include transition;
+}
+
+.box-abstract {
+  @extend .box;
+
+  background-image: image-url('background/abstract.jpg');
+  @include transition;
+}
+
+.box-concept {
+  @extend .box;
+
+  background-image: image-url('background/concept.jpg');
+  @include transition;
+}
+
