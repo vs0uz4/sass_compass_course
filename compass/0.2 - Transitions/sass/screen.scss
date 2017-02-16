@@ -1,0 +1,106 @@
+// default variables of shadows
+$default-text-shadow-color: rgba(#000, 0.6);
+$default-text-shadow-blur: 5px;
+$default-text-shadow-v-offset: 2px;
+
+$default-box-shadow-color: rgba(#000, 0.2);
+$default-box-shadow-blur: 5px;
+$default-box-shadow-v-offset: 5px;
+
+// importing basics compass utilities
+@import "compass";
+
+/* headers settings */
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h1 {
+  font-size: 3em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+
+}
+
+h2 {
+  font-size: 2em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+}
+
+h3 {
+  font-size: 1.5833333333333333em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+h4 {
+  font-size: 1.3333333333333333em;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+}
+
+h5 {
+  font-size: 1.1666666666666667em;
+  margin-top: 1.67em;
+  margin-bottom: 1.67em;
+}
+
+h6 {
+  font-size: 1.0833333333333333em;
+  margin-top: 2.33em;
+  margin-bottom: 2.33em;
+}
+
+/* class with compass mixin for shadows */
+.sombra {
+  @include single-text-shadow;
+}
+
+.box {
+  display: block;
+  float: left;
+  border: 1px solid;
+  width: 100px;
+  height: 100px;
+  margin: 0px 10px auto;
+}
+
+/* class with compass mixin for tansitions and box-shadows */
+.box-azul {
+  @extend .box;
+
+  background: #5c8bff;
+  @include transition;
+
+  &:hover {
+    background: #61d3ff;
+    @include single-box-shadow;
+  }
+}
+
+.box-verde {
+  @extend .box;
+
+  background: #11FF9C;
+  @include transition;
+
+  &:hover {
+    background: #37ffcf;
+    @include single-box-shadow;
+  }
+}
+
+.box-vermelho {
+  @extend .box;
+
+  background: #FF2631;
+  @include transition;
+
+  &:hover {
+    background: #ff4a5f;
+    @include single-box-shadow;
+  }
+}
