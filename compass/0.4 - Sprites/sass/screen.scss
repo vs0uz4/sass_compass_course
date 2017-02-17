@@ -1,0 +1,115 @@
+// for more informations -> http://compass-style.org/help/tutorials/spriting/
+
+// default variables of shadows
+$default-text-shadow-color: rgba(#000, 0.6);
+$default-text-shadow-blur: 5px;
+$default-text-shadow-v-offset: 2px;
+
+// importing basics compass utilities
+@import "compass";
+@import "icon/*.png";
+@import "hover/*.png";
+
+/* sprites generated with compass sprite helper */
+@include all-icon-sprites;
+@include all-hover-sprites;
+
+// Mixin itself
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+// Usage as a mixin
+.clear-fix {
+  @include clearfix;
+
+  padding-bottom: 15px;
+}
+
+/* icon lengths */
+.icon {
+  padding-left: 15px;
+  width: 300px;
+  height: 300px;
+  float: left;
+}
+
+.icon-audience_color, .icon-audience_bw {
+  @extend .icon;
+}
+
+.icon-backup_color, .icon-backup_bw {
+  @extend .icon;
+}
+
+.icon-edit_color, .icon-edit_bw {
+  @extend .icon;
+}
+
+.hovered-audience {
+  @extend .hover-audience;
+  @extend .icon;
+}
+
+.hovered-backup {
+  @extend .hover-backup;
+  @extend .icon;
+}
+
+.hovered-edit {
+  @extend .hover-edit;
+  @extend .icon;
+}
+
+/* headers settings */
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h1 {
+  font-size: 3em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+
+}
+
+h2 {
+  font-size: 2em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+}
+
+h3 {
+  font-size: 1.5833333333333333em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+h4 {
+  font-size: 1.3333333333333333em;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+}
+
+h5 {
+  font-size: 1.1666666666666667em;
+  margin-top: 1.67em;
+  margin-bottom: 1.67em;
+}
+
+h6 {
+  font-size: 1.0833333333333333em;
+  margin-top: 2.33em;
+  margin-bottom: 2.33em;
+}
+
+/* class with compass mixin for shadows */
+.sombra {
+  @include single-text-shadow;
+}
